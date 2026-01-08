@@ -1,0 +1,27 @@
+[0m23:40:22.928629 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:40:22.989050 | 41698ec1-b169-4957-a183-d46df753885c ==============================
+[0m23:40:22.989050 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:40:22.990056 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\knast\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init emissions_data_modelling', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:40:23.165929 [debug] [MainThread]: Starter project path: C:\Users\knast\supply_chain_emissions_data_modeling\venv\Lib\site-packages\dbt\include\starter_project
+[0m23:40:23.195572 [info ] [MainThread]: 
+Your new dbt project "emissions_data_modelling" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:40:23.195572 [info ] [MainThread]: Setting up your profile.
+[0m23:40:26.284211 [info ] [MainThread]: No sample profile found for clickhouse.
+[0m23:40:26.285760 [debug] [MainThread]: Command `dbt init` succeeded at 23:40:26.285760 after 3.41 seconds
+[0m23:40:26.285760 [debug] [MainThread]: Flushing usage events
