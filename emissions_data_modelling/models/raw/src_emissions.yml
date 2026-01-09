@@ -1,6 +1,6 @@
 version: 2
 sources:
-  - name: raw_emissions_data
+  - name: raw_emissions
     database: default
     tables:
       - name: raw_emissions_data
