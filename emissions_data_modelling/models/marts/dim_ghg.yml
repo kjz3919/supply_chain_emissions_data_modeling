@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_ghg
+    description: Dimensional table for GHG
+    columns:
+      - name: ghg_key
+        description: A surrogate key for GHG dimension
+        tests:
+          - unique
+          - not_null
+          
+      - name: GHG
+        description: Description of Greenhouse Gas
+        tests:
+          - unique
+          - not_null

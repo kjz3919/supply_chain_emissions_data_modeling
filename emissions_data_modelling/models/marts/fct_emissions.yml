@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: fct_emissions
+    description: Staging model for raw sales data
+    columns:
+      - name: emission_key
+        description: The unique identifier for each emission measurement
+        tests:
+          - not_null
+          - unique
+      - name: naics_key
+        description: The unique identifier for each naics code
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_naics')
+              field: naics_key
+      - name: ghg_key
+        description: The unique identifier for each Greenhouse Gas
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_ghg')
+              field: ghg_key
+      - name: unit_key
+        description: A unique identifier for each emission unit
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_unit')
+              field: unit_key
+      - name: useeio_key
+        description: A unique identifier for each USEEIO code
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_useeio')
+              field: useeio_key
+      - name: sc_emission_factors_without_margins
+        description: Emission factors without margins
+        tests:
+          - not_null
+      - name: margins_sc_emission_factors
+        description: Margins for emission factors
+        tests:
+          - not_null
+      - name: sc_emission_factors_with_margins
+        description: Emission factors with margins included
+        tests:
+          - not_null

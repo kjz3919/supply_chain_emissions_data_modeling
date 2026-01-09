@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_naics
+    description: Dimensional table for NAICS
+    columns:
+      - name: naics_key
+        description: A surrogate key for NAICS dimension
+        tests:
+          - unique
+          - not_null
+          
+      - name: naics_code
+        description: Unique identifier for customer
+        tests:
+          - unique
+          - not_null
+      
+      - name: naics_title
+        description: Title describing the industry category
+        tests:
+          - unique
+          - not_null

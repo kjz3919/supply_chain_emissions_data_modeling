@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_unit
+    description: Dimensional table for Unit
+    columns:
+      - name: unit_key
+        description: A surrogate key for Unit dimension
+        tests:
+          - unique
+          - not_null
+          
+      - name: unit
+        description: A column describing the unit of emission
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_useeio
+    description: Dimensional table for USEEIO
+    columns:
+      - name: useeio_key
+        description: A surrogate key for USEEIO dimension
+        tests:
+          - unique
+          - not_null
+          
+      - name: ref_useeio_code
+        description: The USEEIO code
+        tests:
+          - unique
+          - not_null
